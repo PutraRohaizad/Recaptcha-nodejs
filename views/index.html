@@ -10,10 +10,15 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 
-    <title>Recaptcha using Nodejs</title>
+    <title>Recaptcha Project</title>
   </head>
   <body>
+    <h3 class="text-center mt-4">Recaptcha using Nodejs</h3>
+
     <form>
       <div class="container">
         <div class="jumbotron mt-5">
@@ -39,6 +44,13 @@
               id="exampleInputPassword1"
               placeholder="Password"
             />
+          </div>
+
+          <div class="form-group">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LdyRa4UAAAAAFSNEf-m5gujL3Ez_8IRYan_PAvc">
+            </div>
           </div>
 
           <button type="submit" class="btn btn-primary">Submit</button>
